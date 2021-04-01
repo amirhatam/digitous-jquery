@@ -2,17 +2,19 @@
 $("button").click(
 
     function () {
-        var form = $("button");
+        var form = $("input");
 
-
-        if (form.length > 5) {
-
+        console.log(form.val().length);
+       
+        if (form.val().length > 5) {
          $("input").addClass('is-valid');
 
         } else {
             $("input").addClass('is-invalid');
         }
-
-    
-
     });
+
+
+    // $.ajax({
+
+
